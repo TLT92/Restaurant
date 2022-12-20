@@ -3,10 +3,21 @@
   <head>
     <meta charset="utf-8" />
    <title>Restaurant Page</title>
+   <link rel="stylesheet" href="../css/style.css">
+   <script type="module" src="main.js"></script>
   </head>
   <body>
-    <header id="content">Zur Teigtasche</header>
-    <div id="description"></div>
-   <script type="module" src="main.js"></script>
+    <div id="content"></div>
+    <form id="reserveForm">
+      <label for="name">Dein Vor- & Nachname</label><br>
+      <input type="text" id="name" name="name"><br>
+      <label for="date">Datum</label><br>
+      <input type="text" id="date" name="date">
+      <label for="time">Uhrzeit</label><br>
+      <input type="text" id="time" name="time">
+      <label for="persons">Personenzahl</label><br>
+      <input type="text" id="persons" name="persons">
+      <input type="submit" value="Abschicken" id="submit" name="submit">
+    </form>
   </body>
 </html>
