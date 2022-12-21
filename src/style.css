@@ -1,0 +1,178 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background-color: rgb(253, 228, 168);
+    margin: 0px;
+    padding: 0px;
+}
+
+#menuContainer {
+    grid-area: description;
+    display: grid;
+}
+
+#content {
+    display: grid;
+    grid-template-areas:
+    "navigationBar navigationBar navigationBar navigationBar navigationBar"
+    "... header header header ..."
+    "description description description description description"
+    "... surveyorimage surveyorimage surveyorimage ..."
+    "... gif gif gif ..."
+    "footer footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+}
+
+#navigationBar {
+    background-color: rgb(254, 245, 245);
+    width: 100%;
+    height: 50px;
+    grid-area: navigationBar;
+    display: flex;
+    justify-content: center;
+    column-gap: 75px;
+}
+
+#headContainer {
+    grid-area: header;
+    display: grid;
+    column-gap: 20px;
+    max-width: 575px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-areas: 
+    "... imageOne headline imageTwo ..."
+    "... subtitle subtitle subtitle ..."
+}
+
+#headerImageLeft {
+    width: 100px;
+    height: auto;
+    grid-area: imageOne;
+    justify-self: center;
+    align-self: center;
+}
+
+#header {
+    width: 300px;
+    grid-area: headline;
+    align-self: center;
+    text-align: center;
+}
+
+#headerImageRight {
+    width: 100px;
+    height: auto;
+    grid-area: imageTwo;
+    justify-self: center;
+    align-self: center;
+}
+
+#subtitle {
+    grid-area: subtitle;
+    width: auto;
+}
+
+#descriptionWrapper {
+    grid-area: description;
+}
+
+.Buttons {
+    width: 150px;
+    height: auto;
+    height: 40px;
+    align-self: end;
+    background-color: rgba(250, 179, 0, 0.146);
+    border-width: 1px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-color: black;
+}
+
+#figure {
+    grid-area: surveyorimage;
+}
+
+#homepageImage {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+}
+
+#homepageGif {
+    grid-area: gif;
+    margin-top: 100px;
+}
+
+#footer {
+    grid-area: footer;
+    display: block;
+    text-align: center;
+    bottom:0;
+    width: 100%;
+    height: 30px;
+    position: fixed;
+
+    background-color:  rgb(254, 245, 245);
+    display: grid;
+    grid-template-areas:
+    "... ... content content content content ... ...";
+    justify-content: center;
+    grid-column-gap: 10px;
+    margin: 0px;
+    padding: 0px;
+    align-self: end;
+}
+
+#menuContainer {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.menuDiv {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    max-width: 1000px;
+    border-left: 20px solid rgb(254, 245, 245);
+    border-right: 20px solid rgb(254, 245, 245);
+}
+
+.menuHeadlines {
+    background-color: rgb(254, 245, 245);
+}
+
+.menuPictures {
+    width: auto;
+    height: auto;
+    min-height: 200px;
+    max-width: 200px;
+    justify-self: right;
+    justify-content: right;
+    justify-items: right;
+}
+
+#reserveForm {
+    display: none;
+}
+
+#reserveFormContainer {
+    grid-area: surveyorimage;
+    margin-top: 35px;
+    display: none;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 10px;
+  }

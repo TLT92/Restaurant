@@ -1,3 +1,21 @@
+import _ from 'lodash'
+
+import './style.css';
+
+import dumplingGif from './dumpling.gif';
+
+import dumplingPng from './dumpling.png';
+
+import potatoesJPG from './french-fries-potato-wedges-min.jpg';
+
+import teaJPG from './high-view-green-leaves-cup-tea-min.jpg';
+
+import breadJPG from './sourdough-bread-table-min.jpg';
+
+import khinkhaliJPG from './traditional-georgian-khinkali-top-view.jpg';
+
+
+
 import {homePage} from './homePage.js';
 
 import {menuPage} from './menuPage.js';
