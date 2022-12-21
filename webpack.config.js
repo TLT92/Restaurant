@@ -6,8 +6,9 @@ module.exports = {
   },
   mode: 'development',
   output: {
-    filename: 'bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    publicPath: ''
   },
 
 module: {
@@ -18,8 +19,8 @@ module: {
     },
     {
       test: /\.(png|svg|jpg|jpeg|gif)$/i,
-      type: 'asset/resource',
-    },
+      type: 'asset/resource'
+    }
    ],
 },
 };

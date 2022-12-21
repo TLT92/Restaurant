@@ -1,3 +1,7 @@
+import dumplingPng from './dumpling.png';
+
+import khinkhaliJPG from './traditional-georgian-khinkali-top-view.jpg';
+
 export const homePage = function(){
 
     // Page-Specific-Content
@@ -5,7 +9,7 @@ export const homePage = function(){
     headContainer.setAttribute("id", "headContainer")
     document.getElementById("content").appendChild(headContainer);
     let headerImageLeft = document.createElement("img");
-    headerImageLeft.src = "./dumpling.png";
+    headerImageLeft.src = dumplingPng;
     headerImageLeft.setAttribute("id", "headerImageLeft");
     headContainer.appendChild(headerImageLeft);
     let header = document.createElement("h1");
@@ -13,7 +17,7 @@ export const homePage = function(){
     header.textContent = "Zur Teigtasche";
     headContainer.appendChild(header);
     let headerImageRight = document.createElement("img");
-    headerImageRight.src = "./dumpling.png";
+    headerImageRight.src =  dumplingPng;
     headerImageRight.setAttribute("id", "headerImageRight");
     headContainer.appendChild(headerImageRight);
     let subtitle = document.createElement("h2");
@@ -32,7 +36,7 @@ export const homePage = function(){
     figure.setAttribute("id", "figure");
     let homepageImage = document.createElement("img");
     homepageImage.setAttribute("id", "homepageImage");
-    homepageImage.src = "../images/traditional-georgian-khinkali-top-view.jpg";
+    homepageImage.src = khinkhaliJPG;
     homepageImage.alt = "Image by KamranAydino";
     figure.appendChild(homepageImage);
     let homepageImageCaption = document.createElement("figcaption");

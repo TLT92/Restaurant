@@ -1,3 +1,7 @@
+import dumplingGif from './dumpling.gif';
+
+import dumplingPng from './dumpling.png';
+
 export const reservePage = function(){
 
     let reserveContainerFunction = function() {
@@ -9,7 +13,7 @@ export const reservePage = function(){
     headContainer.setAttribute("id", "headContainer")
     document.getElementById("content").appendChild(headContainer);
     let headerImageLeft = document.createElement("img");
-    headerImageLeft.src = "../images/dumpling.png";
+    headerImageLeft.src = dumplingPng;
     headerImageLeft.setAttribute("id", "headerImageLeft");
     headContainer.appendChild(headerImageLeft);
     let header = document.createElement("h1");
@@ -17,7 +21,7 @@ export const reservePage = function(){
     header.textContent = "Reservieren";
     headContainer.appendChild(header);
     let headerImageRight = document.createElement("img");
-    headerImageRight.src = "../images/dumpling.png";
+    headerImageRight.src = dumplingPng;
     headerImageRight.setAttribute("id", "headerImageRight");
     headContainer.appendChild(headerImageRight);
 
@@ -45,7 +49,7 @@ export const reservePage = function(){
 
     let homepageGif = document.createElement("img");
     homepageGif.setAttribute("id", "homepageGif");
-    homepageGif.src = "../images/dumpling.gif";
+    homepageGif.src = dumplingGif;
     homepageGif.alt = "Dumpling Gif";
     document.getElementById("content").appendChild(homepageGif);
 

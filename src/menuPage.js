@@ -1,3 +1,14 @@
+import dumplingPng from './dumpling.png';
+
+import potatoesJPG from './french-fries-potato-wedges-min.jpg';
+
+import teaJPG from './high-view-green-leaves-cup-tea-min.jpg';
+
+import breadJPG from './sourdough-bread-table-min.jpg';
+
+import khinkhaliJPG from './traditional-georgian-khinkali-top-view.jpg';
+
+
 export const menuPage = function(){
 
     // Page-Specific-Content
@@ -5,7 +16,7 @@ export const menuPage = function(){
     headContainer.setAttribute("id", "headContainer")
     document.getElementById("content").appendChild(headContainer);
     let headerImageLeft = document.createElement("img");
-    headerImageLeft.src = "../images/dumpling.png";
+    headerImageLeft.src = dumplingPng;
     headerImageLeft.setAttribute("id", "headerImageLeft");
     headContainer.appendChild(headerImageLeft);
     let header = document.createElement("h1");
@@ -13,7 +24,7 @@ export const menuPage = function(){
     header.textContent = "Unsere Karte";
     headContainer.appendChild(header);
     let headerImageRight = document.createElement("img");
-    headerImageRight.src = "../images/dumpling.png";
+    headerImageRight.src = dumplingPng;
     headerImageRight.setAttribute("id", "headerImageRight");
     headContainer.appendChild(headerImageRight);
 
@@ -40,7 +51,7 @@ export const menuPage = function(){
     startersOne.appendChild(startersBreadDescription);
     let startersBreadFigure = document.createElement("figure");
     let startersBreadImage = document.createElement("img");
-    startersBreadImage.src = "../images/sourdough-bread-table-min.jpg";
+    startersBreadImage.src = breadJPG;
     startersBreadImage.setAttribute("class", "menuPictures");
     let startersBreadCaption = document.createElement("figcaption");
     startersBreadCaption.textContent = "Image by Kamran Aydino"
@@ -68,7 +79,7 @@ export const menuPage = function(){
     mainOne.appendChild(mainDumplingDescription);
     let mainDumplingFigure = document.createElement("figure");
     let mainDumplingImage = document.createElement("img");
-    mainDumplingImage.src = "../images/traditional-georgian-khinkali-top-view.jpg";
+    mainDumplingImage.src = khinkhaliJPG;
     mainDumplingImage.setAttribute("class", "menuPictures");
     let mainDumplingCaption = document.createElement("figcaption");
     mainDumplingCaption.textContent = "Image by Kamran Aydino"
@@ -96,7 +107,7 @@ export const menuPage = function(){
     sideOne.appendChild(sidePotatoesDescription);
     let sidePotatoesFigure = document.createElement("figure");
     let sidePotatoesImage = document.createElement("img");
-    sidePotatoesImage.src = "../images/french-fries-potato-wedges-min.jpg";
+    sidePotatoesImage.src = potatoesJPG;
     sidePotatoesImage.setAttribute("class", "menuPictures");
     let sidePotatoesCaption = document.createElement("figcaption");
     sidePotatoesCaption.textContent = "Image by timolina"
@@ -125,7 +136,7 @@ export const menuPage = function(){
     drinkOne.appendChild(drinkTeaDescription);
     let drinkTeaFigure = document.createElement("figure");
     let drinkTeaImage = document.createElement("img");
-    drinkTeaImage.src = "../images/high-view-green-leaves-cup-tea-min.jpg";
+    drinkTeaImage.src = teaJPG;
     drinkTeaImage.setAttribute("class", "menuPictures");
     let drinkTeaCaption = document.createElement("figcaption");
     drinkTeaCaption.textContent = "Image by Freepik"
