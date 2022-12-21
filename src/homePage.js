@@ -5,7 +5,7 @@ export const homePage = function(){
     headContainer.setAttribute("id", "headContainer")
     document.getElementById("content").appendChild(headContainer);
     let headerImageLeft = document.createElement("img");
-    headerImageLeft.src = "../images/dumpling.png";
+    headerImageLeft.src = "./dumpling.png";
     headerImageLeft.setAttribute("id", "headerImageLeft");
     headContainer.appendChild(headerImageLeft);
     let header = document.createElement("h1");
@@ -13,7 +13,7 @@ export const homePage = function(){
     header.textContent = "Zur Teigtasche";
     headContainer.appendChild(header);
     let headerImageRight = document.createElement("img");
-    headerImageRight.src = "../images/dumpling.png";
+    headerImageRight.src = "./dumpling.png";
     headerImageRight.setAttribute("id", "headerImageRight");
     headContainer.appendChild(headerImageRight);
     let subtitle = document.createElement("h2");
